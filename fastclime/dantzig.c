@@ -4,11 +4,12 @@
 		Primal Dual (i.e. Self Dual) Simplex Method on Dantzig Selector
 		R. Vanderbei & H. Pang, Novermeber 2012
 
-******************************************************************************/         
+******************************************************************************/ 
+
+#include <Python.h>        
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <R.h>
 
 #include "myalloc.h"
 #include "lu.h"

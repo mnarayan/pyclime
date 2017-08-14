@@ -2,11 +2,12 @@
 Implementation of the Primal Dual (i.e. Self Dual) Simplex Method on Sparse Precision Matrix Estimation
 H. Pang, H. Liu & R. Vanderbei, March 2013
 ******************************************************************************/
-         
+
+#include <Python.h>         
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <R.h>
+
 #include "myalloc.h"
 #include "lu.h"
 #include "linalg.h"

@@ -4,11 +4,12 @@
 		Primal Dual (i.e. Self Dual) Simplex Method Linear Programming Solver for R
 		R. Vanderbei & H. Pang, June 2013
 
-******************************************************************************/         
+******************************************************************************/ 
+
+#include <Python.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-#include <R.h>
 
 #include "myalloc.h"
 #include "lu.h"
