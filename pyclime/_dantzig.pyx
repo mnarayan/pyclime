@@ -10,7 +10,7 @@ cdef extern from "dantzig.h":
                 double *lambdalist
                 );
 
-def mainfunc(cnp.ndarray[double, ndim=2, mode="c"] X2 not None,
+def main(cnp.ndarray[double, ndim=2, mode="c"] X2 not None,
             cnp.ndarray[double, ndim=2, mode="c"] Xy not None,
             cnp.ndarray[double, ndim=2, mode="c"] BETA0,
             int d0,

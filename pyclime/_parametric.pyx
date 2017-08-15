@@ -12,7 +12,7 @@ cdef extern from "parametric.h":
                     double *iicov
                     );
     
-def mainfunc(cnp.ndarray[double, ndim=2, mode="c"] Shat not None,
+def main(cnp.ndarray[double, ndim=2, mode="c"] Shat not None,
             cnp.ndarray[double, ndim=2, mode="c"] mu_input,
             double lambdamin,
             int nlambda,
@@ -21,14 +21,6 @@ def mainfunc(cnp.ndarray[double, ndim=2, mode="c"] Shat not None,
             ):
     
     cdef int p = Shat.shape[1]
-    # cdef cnp.ndarray mu_input = cnp.zeros((p,nlambda),
-    #                                     dtype = cnp.float64,
-    #                                     order="C"
-    #                                     )
-    # cdef cnp.ndarray iicov = cnp.zeros((p*p,nlambda),
-    #                                    dtype = cnp.float64,
-    #                                    order="C"
-    #                                    )
     parametric(<double*> Shat.data,
                &p,
                <double*> mu_input.data,
