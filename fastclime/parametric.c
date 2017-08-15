@@ -486,7 +486,3 @@ int ratio_test(
 
 
 
-
-
-
-
